@@ -1,0 +1,32 @@
+.popular {
+    display: flex;
+    flex-direction: column; /* Changed to column to stack items vertically */
+    align-items: center; /* Center align items horizontally */
+    gap: 10px;
+    height: 90vh;
+    margin-top: 100px; /* Reduced margin-top for better positioning */
+    text-align: center; /* Center align text within the container */
+}
+
+.popular h1 {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 100px; /* Reset top margin */
+    margin-bottom: 20px; /* Adjusted bottom margin for spacing */
+}
+
+.popular hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+
+.popular-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-top: 50px;
+}
+
+
