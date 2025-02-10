@@ -1,33 +1,35 @@
-.newsletters{
+.newsletters {
     width: 75%;
-    height: 40vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: auto;
-    padding: 0px 140px;
-    margin-top: 29%;
+    padding: 2rem;
+    margin-top: 25%;
+    margin-bottom: 5%;
     background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    border-radius: 15px;
 }
 
-.newsletters h1{
+.newsletters h1 {
     color: #454545;
-    font-size: 55px;
+    font-size: 2.5rem;
     font-weight: 600;
 }
 
-.newsletters p{
+.newsletters p {
     color: #454545;
-    font-size: 20px;
-    margin-bottom: 5%;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
     margin-top: 2%;
 }
 
-.newsletters div{
+.newsletters div {
     display: flex;
     margin-bottom: 10%;
-    align-items:center;
+    align-items: center;
     justify-content: space-between;
     background: white;
     width: 730px;
@@ -36,7 +38,7 @@
     border: 1px solid #e3e3e3;
 }
 
-.newsletters input{
+.newsletters input {
     width: 500px;
     margin-left: 30px;
     border: none;
@@ -46,13 +48,33 @@
     font-size: 16px;
 }
 
+.newsletters .form-control {
+    max-width: 500px;
+    margin-right: 1rem;
+}
 
-.newsletters div button{
+.newsletters div button {
     width: 200px;
     height: 50px;
-    border-radius: 80px;
-        background:black;
-        color: white;
-        font-size: 16px;
-        cursor: pointer;
+    border-radius: 50px;
+    background: black;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+body.dark .newsletters h1,
+body.dark .newsletters p {
+    color: #ffffff;
+}
+
+body.dark .newsletters .form-control {
+    background: #333;
+    color: #ffffff;
+    border: 1px solid #555;
+}
+
+body.dark .newsletters .btn {
+    background: #ffffff;
+    color: black;
 }

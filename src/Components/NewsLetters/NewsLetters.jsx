@@ -1,18 +1,18 @@
-import React from 'react'
-import '../NewsLetters/NewsLetters.css'
+import React from 'react';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import './NewsLetters.css';
 
 const NewsLetters = () => {
   return (
-    <div className='newsletters'>
-        <h1>Get Exclusive offer on your Email</h1>
-        <p>Subscribe to our newletter and stay update</p>
-        <div>
-            <input type="email" placeholder='Enter the id'/>
-            <button>Subcribe</button>
-
-        </div>
+    <div className="newsletters">
+      <h1>Get Exclusive offer on your Email</h1>
+      <p>Subscribe to our newsletter and stay updated</p>
+      <div>
+        <input type="email" className="form-control" placeholder="Enter your email" />
+        <button className="btn">Subscribe</button>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default NewsLetters
+export default NewsLetters;

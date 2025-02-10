@@ -1,5 +1,7 @@
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -26,6 +28,8 @@ a:hover {
 
 body {
   font-family: "poppins";
+  margin: 0;
+  padding: 0;
 }
 
 /* Light mode styles */
