@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
-import { ShoppingContext } from '../Context/Shoppping_Context'; // Verify correct path
-
+import { ShoppingContext } from '../Context/Shopping_Context'; // Verify correct path
 import dropping_icon from '../Components/Assets/dropdown_icon.png';
 import Items from '../Components/items/Items'; // Correct import path
 import '../Pages/CSS/ShopCategory.css';

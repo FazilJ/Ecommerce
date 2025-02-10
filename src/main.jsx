@@ -1,13 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client'; // Import from react-dom/client
-import App from './App.jsx';
+import { createRoot } from 'react-dom/client';
+import App from './App';
 import './index.css';
-import ShoppingContextProvider from './Context/Shoppping_Context'; // Adjust path as per your project structure
+import ShoppingContextProvider from './Context/Shopping_Context';
+import ThemeContextProvider from './Context/Theme_Context'; // Import the theme context provider
 
-ReactDOM.createRoot(document.getElementById('root')).render(  
-  
-    <ShoppingContextProvider>
-      <App />
-    </ShoppingContextProvider>
-  
+const container = document.getElementById('root');
+const root = createRoot(container);
+
+root.render(
+  <React.StrictMode>
+    <ThemeContextProvider>
+      <ShoppingContextProvider>
+        <App />
+      </ShoppingContextProvider>
+    </ThemeContextProvider>
+  </React.StrictMode>
 );

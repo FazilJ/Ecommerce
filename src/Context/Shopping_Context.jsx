@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useState } from 'react';
 import all_product from '../Components/Assets/all_product'; // Verify this path
 
 export const ShoppingContext = createContext(null);
@@ -14,11 +14,8 @@ const GetDefault = () => {
 const ShoppingContextProvider = (props) => {
   const [cartItems, setCartItems] = useState(GetDefault());
 
-  // console.log(cartItems)
-
   const addCart = (ItemId) => {
     setCartItems(prev => ({ ...prev, [ItemId]: prev[ItemId] + 1 }));
-    console.log(cartItems)
   }
 
   const removeCart = (ItemId) => {
@@ -33,7 +30,7 @@ const ShoppingContextProvider = (props) => {
         totalAmount += itemInfo.new_price * cartItems[item];
       }
     }
-    return totalAmount; // Move return statement outside of the loop
+    return totalAmount;
   };
 
   const getTotalCartItems =()=>{

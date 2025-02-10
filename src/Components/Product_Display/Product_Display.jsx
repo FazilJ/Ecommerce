@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import star_icon from '../Assets/star_icon.png';
 import star_dull_icon from '../Assets/star_dull_icon.png';
 import '../Product_Display/Product_Display.css';
-import { ShoppingContext } from '../../Context/Shoppping_Context'; // Verify the correct path
+import { ShoppingContext } from '../../Context/Shopping_Context'; // Verify the correct path
 
 const Product_Display = ({ product }) => {
   const { addCart } = useContext(ShoppingContext);

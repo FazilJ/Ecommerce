@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
 }
 :root {
@@ -25,15 +25,26 @@ a:hover {
 }
 
 body {
-
   font-family: "poppins";
+}
+
+/* Light mode styles */
+body.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark mode styles */
+body.dark {
+  background-color: #000000;
+  color: #ffffff;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-/* 
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -44,14 +55,14 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
-} */
-/* button:hover {
+}
+button:hover {
   border-color: #646cff;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-} */
+}
 
 @media (prefers-color-scheme: light) {
   :root {
