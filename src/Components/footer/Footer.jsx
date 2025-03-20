@@ -12,31 +12,46 @@ const Footer = () => {
   return (
     <footer className={`footer ${theme === 'light' ? 'bg-light text-dark' : 'bg-dark text-light'} py-4`}>
       <div className="container">
-        <div className="row">
+        <div className="row align-items-center">
+          {/* Logo and Brand Section */}
           <div className="col-md-4 text-center text-md-start mb-3 mb-md-0">
             <img src={footer_logo} alt="Logo" width="50" height="50" />
-            <p className="mt-2">SHOPPER</p>
+            <p className="mt-2 fw-bold">SHOPPER</p>
           </div>
+
+          {/* Navigation Links Section */}
           <div className="col-md-4 text-center mb-3 mb-md-0">
             <ul className="list-unstyled">
-              <li>Company</li>
-              <li>Product</li>
-              <li>Office</li>
-              <li>About</li>
-              <li>Contact</li>
+              <li className="mb-2"><a href="#company" className="text-decoration-none text-reset">Company</a></li>
+              <li className="mb-2"><a href="#product" className="text-decoration-none text-reset">Product</a></li>
+              <li className="mb-2"><a href="#office" className="text-decoration-none text-reset">Office</a></li>
+              <li className="mb-2"><a href="#about" className="text-decoration-none text-reset">About</a></li>
+              <li className="mb-2"><a href="#contact" className="text-decoration-none text-reset">Contact</a></li>
             </ul>
           </div>
+
+          {/* Social Media Icons Section */}
           <div className="col-md-4 text-center text-md-end">
             <div className="d-flex justify-content-center justify-content-md-end">
-              <img src={instagram} alt="Instagram" width="30" height="30" className="me-2" />
-              <img src={pinrest} alt="Pinterest" width="30" height="30" className="me-2" />
-              <img src={whatsapp} alt="WhatsApp" width="30" height="30" />
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src={instagram} alt="Instagram" width="30" height="30" className="me-2" />
+              </a>
+              <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer">
+                <img src={pinrest} alt="Pinterest" width="30" height="30" className="me-2" />
+              </a>
+              <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer">
+                <img src={whatsapp} alt="WhatsApp" width="30" height="30" />
+              </a>
             </div>
           </div>
         </div>
+
+        {/* Divider */}
         <hr className="my-3" />
+
+        {/* Copyright Section */}
         <div className="text-center">
-          <p>Copyright © 2024 - All Rights Reserved.</p>
+          <p className="mb-0">Copyright © 2024 - All Rights Reserved.</p>
         </div>
       </div>
     </footer>

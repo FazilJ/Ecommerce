@@ -6,7 +6,7 @@ const Discription_Box =()=>{
         <div className="discriptionbox">
             <div className="discriptionbox-nav">
                 <div className="discriptionbox-nav-box">Discription</div>
-                <div className="discriptionbox-nav-box-fade">Review(200)</div>
+                <div className="discriptionbox-nav-box">Review(200)</div>
                 </div>  
                 <div className="discriptionbox-description">
                     <p>E-commerce has become an important tool for small and large businesses worldwide, not only to sell to customers, but also to engage them.[23][24]

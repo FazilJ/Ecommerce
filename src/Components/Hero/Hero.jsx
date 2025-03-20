@@ -9,7 +9,7 @@ const Hero = () => {
   const navigate = useNavigate();
 
   const handleLatestCollectionClick = () => {
-    navigate('/new-collection');
+    // navigate('/new-collection');
   };
 
   return (

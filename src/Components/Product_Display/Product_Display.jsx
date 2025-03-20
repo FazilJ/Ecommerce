@@ -12,16 +12,16 @@ const Product_Display = ({ product }) => {
   }
 
   return (
-    <div className="container my-4">
+    <div className="container my-6">
       <div className="row">
         <div className="col-md-6">
-          <div className="d-flex flex-column align-items-center">
+          <div className="d-flex flex-column align-items-right">
             <img src={product.image} alt="" className="img-fluid mb-3" />
-            <div className="d-flex justify-content-center">
+            <div className="d-flex justify-content-right">
               <img src={product.image} alt="" className="img-thumbnail me-2" />
               <img src={product.image} alt="" className="img-thumbnail me-2" />
               <img src={product.image} alt="" className="img-thumbnail me-2" />
-              <img src={product.image} alt="" className="img-thumbnail" />
+              {/* <img src={product.image} alt="" className="img-thumbnail" /> */}
             </div>
           </div>
         </div>

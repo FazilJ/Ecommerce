@@ -10,13 +10,20 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --input-text-color-light: black;
+  --input-text-color-dark: #0000ff;
+}
+[data-theme='light'] .username-input {
+  color: var(--input-text-color-light);
 }
 
+[data-theme='dark'] .username-input {
+  color: var(--input-text-color-dark);
+}
 a {
   font-weight: 500;
   color: #646cff;

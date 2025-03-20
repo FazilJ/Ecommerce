@@ -8,6 +8,18 @@
  border: 0;
 }
 
+.submit-button {
+    background-color: red;
+    color: blue;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: royalblue;
+  }
+
 .cart-items-format{
     display: grid;
     grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;

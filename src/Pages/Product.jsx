@@ -20,7 +20,7 @@ const Product = () => {
 
   return (
     <div>
-      <ThemeToggleButton />
+
       <Breadcrum product={product} />
       <Product_Display product={product} />
       <Discription_Box/>
